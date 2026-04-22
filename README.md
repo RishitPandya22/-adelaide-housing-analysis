@@ -96,6 +96,13 @@ adelaide-housing-analysis/
 ├── chart4_price_distribution.png
 └── chart5_price_growth.png
 ---
+## 🗺️ Interactive Map
+👉 **[Click here to explore the live interactive Adelaide Housing Map]
+(https://rishitpandya22.github.io/-adelaide-housing-analysis/adelaide_housing_map.html)**
+
+> Click any suburb dot to see median price, bedrooms and distance to CBD!
+
+
 
 ## 👤 Author
 **Rishit Pandya**
