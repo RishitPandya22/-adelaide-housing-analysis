@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b09651fcff66f65051ea81af7bab0584 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 30px; left: 30px; z-index: 1000;
+     background-color: white; padding: 15px; border-radius: 10px;
+     border: 2px solid grey; font-size: 14px;">
+     <b>🏠 Adelaide Housing Prices</b><br><br>
+     <span style="color:red;">●</span> Premium (>$800K)<br>
+     <span style="color:orange;">●</span> Mid-Range ($500K-$800K)<br>
+     <span style="color:green;">●</span> Budget (<$500K)
+</div>
+    
+            <div class="folium-map" id="map_b09651fcff66f65051ea81af7bab0584" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b09651fcff66f65051ea81af7bab0584 = L.map(
+                "map_b09651fcff66f65051ea81af7bab0584",
+                {
+                    center: [-34.9285, 138.6007],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5deca09ec69f8f2d35c7f28fc994304c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5deca09ec69f8f2d35c7f28fc994304c.addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+            var circle_marker_1ee40308d42d10a488235abd3e2c545c = L.circleMarker(
+                [-34.98, 138.516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_4e1296c54bd7a7859d713d6ed4e1b79f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5072c52e3d7be6a012334ea8e4e0bcb0 = $(`<div id="html_5072c52e3d7be6a012334ea8e4e0bcb0" style="width: 100.0%; height: 100.0%;">             <b>Glenelg</b><br>             💰 Median Price: $870,000<br>             🛏️ Bedrooms: 4<br>             📍 Distance to CBD: 11 km<br>             🏷️ Category: Premium             </div>`)[0];
+                popup_4e1296c54bd7a7859d713d6ed4e1b79f.setContent(html_5072c52e3d7be6a012334ea8e4e0bcb0);
+            
+        
+
+        circle_marker_1ee40308d42d10a488235abd3e2c545c.bindPopup(popup_4e1296c54bd7a7859d713d6ed4e1b79f)
+        ;
+
+        
+    
+    
+            circle_marker_1ee40308d42d10a488235abd3e2c545c.bindTooltip(
+                `<div>
+                     Glenelg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17d4e8b9c8fcc25ef77ccf1629e9765b = L.circleMarker(
+                [-34.921, 138.632],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_1fdb4c04d1fd378eddea12e18118e821 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ca0eb245fcdb28d391dd7afec8770a62 = $(`<div id="html_ca0eb245fcdb28d391dd7afec8770a62" style="width: 100.0%; height: 100.0%;">             <b>Norwood</b><br>             💰 Median Price: $990,000<br>             🛏️ Bedrooms: 4<br>             📍 Distance to CBD: 3 km<br>             🏷️ Category: Premium             </div>`)[0];
+                popup_1fdb4c04d1fd378eddea12e18118e821.setContent(html_ca0eb245fcdb28d391dd7afec8770a62);
+            
+        
+
+        circle_marker_17d4e8b9c8fcc25ef77ccf1629e9765b.bindPopup(popup_1fdb4c04d1fd378eddea12e18118e821)
+        ;
+
+        
+    
+    
+            circle_marker_17d4e8b9c8fcc25ef77ccf1629e9765b.bindTooltip(
+                `<div>
+                     Norwood
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abcaf5c7a0a5ffb092e9c88153f569c2 = L.circleMarker(
+                [-34.951, 138.601],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_bcb4b744975c92758911645ef9d84861 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4ec39197935282b3f3cb1d17af77ac8d = $(`<div id="html_4ec39197935282b3f3cb1d17af77ac8d" style="width: 100.0%; height: 100.0%;">             <b>Unley</b><br>             💰 Median Price: $1,050,000<br>             🛏️ Bedrooms: 4<br>             📍 Distance to CBD: 4 km<br>             🏷️ Category: Premium             </div>`)[0];
+                popup_bcb4b744975c92758911645ef9d84861.setContent(html_4ec39197935282b3f3cb1d17af77ac8d);
+            
+        
+
+        circle_marker_abcaf5c7a0a5ffb092e9c88153f569c2.bindPopup(popup_bcb4b744975c92758911645ef9d84861)
+        ;
+
+        
+    
+    
+            circle_marker_abcaf5c7a0a5ffb092e9c88153f569c2.bindTooltip(
+                `<div>
+                     Unley
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40ab13382080310e8b834569e61421a9 = L.circleMarker(
+                [-34.888, 138.597],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_b620ecc09bb549392020ffa3e54e6a78 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_98882d4a08817305df8e13c1ecbae8c0 = $(`<div id="html_98882d4a08817305df8e13c1ecbae8c0" style="width: 100.0%; height: 100.0%;">             <b>Prospect</b><br>             💰 Median Price: $730,000<br>             🛏️ Bedrooms: 3<br>             📍 Distance to CBD: 4 km<br>             🏷️ Category: Mid-Range             </div>`)[0];
+                popup_b620ecc09bb549392020ffa3e54e6a78.setContent(html_98882d4a08817305df8e13c1ecbae8c0);
+            
+        
+
+        circle_marker_40ab13382080310e8b834569e61421a9.bindPopup(popup_b620ecc09bb549392020ffa3e54e6a78)
+        ;
+
+        
+    
+    
+            circle_marker_40ab13382080310e8b834569e61421a9.bindTooltip(
+                `<div>
+                     Prospect
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07b66852b2ae645a0ac54ef5dc7dc80b = L.circleMarker(
+                [-34.93, 138.645],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_5973aee96349afabc1a22db551214ce1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8a69d04bcff2cb274b8bd3048c513123 = $(`<div id="html_8a69d04bcff2cb274b8bd3048c513123" style="width: 100.0%; height: 100.0%;">             <b>Burnside</b><br>             💰 Median Price: $1,180,000<br>             🛏️ Bedrooms: 4<br>             📍 Distance to CBD: 7 km<br>             🏷️ Category: Premium             </div>`)[0];
+                popup_5973aee96349afabc1a22db551214ce1.setContent(html_8a69d04bcff2cb274b8bd3048c513123);
+            
+        
+
+        circle_marker_07b66852b2ae645a0ac54ef5dc7dc80b.bindPopup(popup_5973aee96349afabc1a22db551214ce1)
+        ;
+
+        
+    
+    
+            circle_marker_07b66852b2ae645a0ac54ef5dc7dc80b.bindTooltip(
+                `<div>
+                     Burnside
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1227282ce50da476d81bdad6335a935a = L.circleMarker(
+                [-34.921, 138.498],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_0799f8c5099479a500f9a644483948ab = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1101f1082097416eab3455d7188ad222 = $(`<div id="html_1101f1082097416eab3455d7188ad222" style="width: 100.0%; height: 100.0%;">             <b>Henley Beach</b><br>             💰 Median Price: $800,000<br>             🛏️ Bedrooms: 4<br>             📍 Distance to CBD: 10 km<br>             🏷️ Category: Premium             </div>`)[0];
+                popup_0799f8c5099479a500f9a644483948ab.setContent(html_1101f1082097416eab3455d7188ad222);
+            
+        
+
+        circle_marker_1227282ce50da476d81bdad6335a935a.bindPopup(popup_0799f8c5099479a500f9a644483948ab)
+        ;
+
+        
+    
+    
+            circle_marker_1227282ce50da476d81bdad6335a935a.bindTooltip(
+                `<div>
+                     Henley Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92dad51cd930547e119589b1aaef03fd = L.circleMarker(
+                [-34.833, 138.483],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_eabcdfe43cdd8d175dc4c9882e8dd9b4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a61fb6717356c12ce3115e12f70bbed9 = $(`<div id="html_a61fb6717356c12ce3115e12f70bbed9" style="width: 100.0%; height: 100.0%;">             <b>Semaphore</b><br>             💰 Median Price: $680,000<br>             🛏️ Bedrooms: 3<br>             📍 Distance to CBD: 14 km<br>             🏷️ Category: Mid-Range             </div>`)[0];
+                popup_eabcdfe43cdd8d175dc4c9882e8dd9b4.setContent(html_a61fb6717356c12ce3115e12f70bbed9);
+            
+        
+
+        circle_marker_92dad51cd930547e119589b1aaef03fd.bindPopup(popup_eabcdfe43cdd8d175dc4c9882e8dd9b4)
+        ;
+
+        
+    
+    
+            circle_marker_92dad51cd930547e119589b1aaef03fd.bindTooltip(
+                `<div>
+                     Semaphore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa414e4fd6849ea6673e58edf2718c57 = L.circleMarker(
+                [-34.845, 138.507],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_e99eb4121e3b079584ea10567c86bffc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b99c10d0bc590a0113d886e0a81a4137 = $(`<div id="html_b99c10d0bc590a0113d886e0a81a4137" style="width: 100.0%; height: 100.0%;">             <b>Port Adelaide</b><br>             💰 Median Price: $530,000<br>             🛏️ Bedrooms: 3<br>             📍 Distance to CBD: 14 km<br>             🏷️ Category: Mid-Range             </div>`)[0];
+                popup_e99eb4121e3b079584ea10567c86bffc.setContent(html_b99c10d0bc590a0113d886e0a81a4137);
+            
+        
+
+        circle_marker_fa414e4fd6849ea6673e58edf2718c57.bindPopup(popup_e99eb4121e3b079584ea10567c86bffc)
+        ;
+
+        
+    
+    
+            circle_marker_fa414e4fd6849ea6673e58edf2718c57.bindTooltip(
+                `<div>
+                     Port Adelaide
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d641613c33053c866d01ab4e32f816d = L.circleMarker(
+                [-35.065, 138.552],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_7d4446eacf3a6886343717407eab976c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_032fa99c716eb26bfdf663a5406b2488 = $(`<div id="html_032fa99c716eb26bfdf663a5406b2488" style="width: 100.0%; height: 100.0%;">             <b>Morphett Vale</b><br>             💰 Median Price: $630,000<br>             🛏️ Bedrooms: 3<br>             📍 Distance to CBD: 14 km<br>             🏷️ Category: Mid-Range             </div>`)[0];
+                popup_7d4446eacf3a6886343717407eab976c.setContent(html_032fa99c716eb26bfdf663a5406b2488);
+            
+        
+
+        circle_marker_1d641613c33053c866d01ab4e32f816d.bindPopup(popup_7d4446eacf3a6886343717407eab976c)
+        ;
+
+        
+    
+    
+            circle_marker_1d641613c33053c866d01ab4e32f816d.bindTooltip(
+                `<div>
+                     Morphett Vale
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4281b82cfa5152708bf5135813412b9b = L.circleMarker(
+                [-35.065, 138.558],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_b09651fcff66f65051ea81af7bab0584);
+        
+    
+        var popup_083657723d4ba677d22665bce2b2b19d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cb8b3fc49c78f5b8ae62b8a386eab159 = $(`<div id="html_cb8b3fc49c78f5b8ae62b8a386eab159" style="width: 100.0%; height: 100.0%;">             <b>Hallett Cove</b><br>             💰 Median Price: $730,000<br>             🛏️ Bedrooms: 3<br>             📍 Distance to CBD: 20 km<br>             🏷️ Category: Mid-Range             </div>`)[0];
+                popup_083657723d4ba677d22665bce2b2b19d.setContent(html_cb8b3fc49c78f5b8ae62b8a386eab159);
+            
+        
+
+        circle_marker_4281b82cfa5152708bf5135813412b9b.bindPopup(popup_083657723d4ba677d22665bce2b2b19d)
+        ;
+
+        
+    
+    
+            circle_marker_4281b82cfa5152708bf5135813412b9b.bindTooltip(
+                `<div>
+                     Hallett Cove
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

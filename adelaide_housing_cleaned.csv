@@ -1,0 +1,51 @@
+Suburb,Year,Median_Price,Bedrooms,Distance_to_CBD_km,Latitude,Longitude,Price_Category
+Glenelg,2019,720000,3,11,-34.98,138.516,Mid-Range
+Norwood,2019,850000,3,3,-34.921,138.632,Premium
+Unley,2019,910000,4,4,-34.951,138.601,Premium
+Prospect,2019,620000,3,4,-34.888,138.597,Mid-Range
+Burnside,2019,980000,4,7,-34.93,138.645,Premium
+Glenelg,2020,740000,3,11,-34.98,138.516,Mid-Range
+Norwood,2020,870000,3,3,-34.921,138.632,Premium
+Unley,2020,930000,4,4,-34.951,138.601,Premium
+Prospect,2020,640000,3,4,-34.888,138.597,Mid-Range
+Burnside,2020,1010000,4,7,-34.93,138.645,Premium
+Glenelg,2021,790000,3,11,-34.98,138.516,Mid-Range
+Norwood,2021,920000,4,3,-34.921,138.632,Premium
+Unley,2021,980000,4,4,-34.951,138.601,Premium
+Prospect,2021,670000,3,4,-34.888,138.597,Mid-Range
+Burnside,2021,1080000,4,7,-34.93,138.645,Premium
+Mawson Lakes,2019,480000,3,14,-34.793,138.613,Budget
+Salisbury,2019,380000,3,23,-34.77,138.64,Budget
+Elizabeth,2019,280000,2,28,-34.711,138.689,Budget
+Modbury,2019,490000,3,14,-34.833,138.683,Budget
+Tea Tree Gully,2019,510000,3,18,-34.823,138.738,Mid-Range
+Mawson Lakes,2020,500000,3,14,-34.793,138.613,Mid-Range
+Salisbury,2020,395000,3,23,-34.77,138.64,Budget
+Elizabeth,2020,290000,2,28,-34.711,138.689,Budget
+Modbury,2020,505000,3,14,-34.833,138.683,Mid-Range
+Tea Tree Gully,2020,525000,3,18,-34.823,138.738,Mid-Range
+Glenelg,2022,870000,4,11,-34.98,138.516,Premium
+Norwood,2022,990000,4,3,-34.921,138.632,Premium
+Unley,2022,1050000,4,4,-34.951,138.601,Premium
+Prospect,2022,730000,3,4,-34.888,138.597,Mid-Range
+Burnside,2022,1180000,4,7,-34.93,138.645,Premium
+Mawson Lakes,2021,530000,3,14,-34.793,138.613,Mid-Range
+Salisbury,2021,410000,3,23,-34.77,138.64,Budget
+Elizabeth,2021,305000,2,28,-34.711,138.689,Budget
+Modbury,2021,530000,3,14,-34.833,138.683,Mid-Range
+Tea Tree Gully,2021,555000,3,18,-34.823,138.738,Mid-Range
+Henley Beach,2019,650000,3,10,-34.921,138.498,Mid-Range
+Semaphore,2019,540000,3,14,-34.833,138.483,Mid-Range
+Port Adelaide,2019,420000,3,14,-34.845,138.507,Budget
+Morphett Vale,2019,500000,3,14,-35.065,138.552,Mid-Range
+Hallett Cove,2019,580000,3,20,-35.065,138.558,Mid-Range
+Henley Beach,2021,720000,3,10,-34.921,138.498,Mid-Range
+Semaphore,2021,600000,3,14,-34.833,138.483,Mid-Range
+Port Adelaide,2021,470000,3,14,-34.845,138.507,Budget
+Morphett Vale,2021,560000,3,14,-35.065,138.552,Mid-Range
+Hallett Cove,2021,650000,3,20,-35.065,138.558,Mid-Range
+Henley Beach,2022,800000,4,10,-34.921,138.498,Premium
+Semaphore,2022,680000,3,14,-34.833,138.483,Mid-Range
+Port Adelaide,2022,530000,3,14,-34.845,138.507,Mid-Range
+Morphett Vale,2022,630000,3,14,-35.065,138.552,Mid-Range
+Hallett Cove,2022,730000,3,20,-35.065,138.558,Mid-Range
